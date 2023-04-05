@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
     integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" type="text/css" href="node_modules/countdowntimer/dist/css/jQuery.countdownTimer.css" /> -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
@@ -61,14 +62,16 @@
   </header>
 
   <section class="poster">
-    <div class="poster__inner">
-      <h1 class="poster__title">ОСВОЙТЕ МИР <br /> КРИПТОВАЛЮТ <br /> <span class="poster__title-span">С НУЛЯ</span>
-      </h1>
-      <p class="poster__descr">Мы не льем воду. <br />Мы делаем упор на практику!<br />С нами вы научитесь правильно
-        <br />
-        мыслить на крипто-рынке
-      </p>
-      <button class="poster__button" onclick="alert('Делаем')">КУПИТЬ КУРС</button>
+    <div class="container">
+      <div class="poster__inner">
+        <h1 class="poster__title">ОСВОЙТЕ МИР <br /> КРИПТОВАЛЮТ <br /> <span class="poster__title-span">С НУЛЯ</span>
+        </h1>
+        <p class="poster__descr">Мы не льем воду. <br />Мы делаем упор на практику!<br />С нами вы научитесь правильно
+          <br />
+          мыслить на крипто-рынке
+        </p>
+        <button class="poster__button" onclick="alert('Делаем')">КУПИТЬ КУРС</button>
+      </div>
     </div>
   </section>
 
@@ -392,9 +395,9 @@
   </section>
 
   <section class="program">
-    <div class="container">
-      <div class="program__inner">
-        <div class="program__inner-main">
+    <div class="program__inner-main">
+      <div class="container">
+        <div class="program__inner">
           <h2 class="program__title">ПРОГРАММА КУРСА</h2>
           <div class="program__content">
             <details>
@@ -475,6 +478,9 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="container">
       <div class="program__inner2">
         <details>
           <summary>Эксклюзивная информация от Fincrypto, разработка стратегии, формирование инвестиционного портфеля.
@@ -488,10 +494,280 @@
   <section class="tariff">
     <div class="container">
       <div class="tariff__inner">
-          
+        <h2 class="tariff__title">ТАРИФЫ</h2>
+        <div class="tariff__items">
+          <div class="tariff__item">
+            <div class="tariff__item-wrapper">
+              <h4 class="tariff__item-wrapper__title">Холдер</h4>
+              <p class="tariff__item-wrapper__descr">
+                <b>
+                  Основы фундаментального анализа. Поиск активов для долгосрочных и спекулятивных сделок на спотовом
+                  рынке <br><br>
+                  Формат: <br>
+                  Одно групповое занятие с Александром и его командой <br> Двухнедельное онлайн
+                  сопровождение</b><br><br>
+                Подойдет для тех, кто хочет торговать, находясь в рынке минимальное количество времени и забирать
+                большие движения с
+                наименьшими рисками
+              </p>
+            </div>
+            <button class="tariff__item-btn">Купить за 400$</button>
+          </div>
+
+          <div class="tariff__item">
+            <div class="tariff__item-wrapper tariff__item-wrapper__selected">
+              <h4 class="tariff__item-wrapper__title">ТРЕЙДЕР</h4>
+              <p class="tariff__item-wrapper__descr">
+                Включает фундаментальный и технический анализ, чтобы вы могли ежедневно зарабатывать на
+                трейдинге<br><br>
+                Формат: <br><br>
+                <b>Доступ</b> к обучающим материалам<br><br>
+                <b>Практическая часть</b>: <br>
+                домашние задания и тесты<br><br>
+                Сопровождение <b>кураторами</b><br><br>
+                Торговые стримы от <b>Александра и его команды</b><br><br>
+                <b>Еженедельные</b> групповые созвоны<br><br>
+                Два групповых созвона <b>с Психологом</b><br><br>
+                Zoom-сессия с <b>криптоюристом</b><br><br>
+                Zoom-сессия <b>с экспертом по майнингу</b><br><br>
+                Доступ к закрытому сигнальному каналу <b>Fincrypto Premium</b> на время обучения<br><br>
+                Доступ к закрытому каналу <b>Community Fincrypto</b><br><br>
+                Подойдет для тех, кто плохо знаком с криптовалютой и хочет изучить основы, а также поднять свои знания
+                на новый уровень
+              </p>
+            </div>
+            <button class="tariff__item-btn">Купить за 700$</button>
+          </div>
+
+          <div class="tariff__item">
+            <div class="tariff__item-wrapper">
+              <h4 class="tariff__item-wrapper__title">Маркетмейкер</h4>
+              <p class="tariff__item-wrapper__descr">
+                <b>
+                  Вы получаете полную обратную связь, разбор каждой совершенной сделки, составление личной торговой
+                  стратегии, понимание
+                  того, как рынок манипулирует активами, эксклюзивный доступ к нашим передовым торговым стратегиям и
+                  вебинарам в режиме
+                  реального времени <br><br>
+                  Персональные занятия в Zoom</b> с доскональным разбором всех вопросов<br><br>
+                Доступ к <b>видеоурокам</b><br><br>
+                <b>Доступ к закрытому каналу Community Fincrypto (Telegram)</b> на время обучения и 1 мес после<br><br>
+                <b>Доступ к закрытому каналу с VIP</b> сигналами Fincrypto (Telegram) <br><br>
+                <b>Практические занятия</b> с домашним заданием
+                <b>Еженедельные</b> групповые созвоны<br><br>
+                Сессии <b>с психологом</b><br><br>
+                Предназначен как для продвинутых трейдеров, так и для новичков, которые хотят под личным наставничеством
+                узнать о всех
+                прелестях трейдинга, как о возможности зарабатывать находясь в любой точке мира и быть впереди всех
+                </span>
+              </p>
+            </div>
+            <button class="tariff__item-btn">Купить за 1200$</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+  <section class="timer">
+    <div class="container">
+      <div class="timer__inner">
+        <h2 class="timer__title">до НАЧАЛА следующего потока:</h2>
+        <div class="timer__wrapper">
+          <div id="timer">
+            <div class="days">00</div> :
+            <div class="hours">00</div> :
+            <div class="minutes">00</div> :
+            <div class="seconds">00</div>
+          </div>
+        </div>
+        <div class="timer__descr">
+          <p>дней</p>
+          <p>часов</p>
+          <p>минут</p>
+          <p>секунд</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="calcPresent">
+    <div class="container">
+      <div class="calcPresent__inner">
+        <h2 class="calcPresent__title">КАЛЬКУЛЯТОР FIN<span>C</span>RYPTO</h2>
+        <p class="calcPresent__descr">Тут будет описание что это такое и зачем оно надо</p>
+        <button class="calcPresent__btn">ПОПРОБОВАТЬ</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="questions">
+    <div class="container">
+      <div class="questions__inner">
+        <h2 class="questions__title">Остались вопросы?</h2>
+        <div class="questions__content">
+          <details>
+            <summary>Я совсем новичок в этом, подойдет ли курс мне?</summary>
+            Конечно. Этот курс ориентирован как для профессионалов,
+            так и для новичков. По окончанию курса вы получите полные знания
+            и правила в трейдинге, не играя в рулетку
+          </details>
+          <details>
+            <summary>Какая минимальная сумма подойдет для хорошей практики
+              на вашем курсе?</summary>
+            Ограничений здесь нет. Можно начать с 50$ и с набором знаний увеличивать свой депозит. Наша задача - научить
+            вас
+            торговать без потерь
+          </details>
+          <details>
+            <summary>Есть ли рассрочка оплаты за обучение?</summary>
+            Есть рассрочка от банка Tinkoff (только для граждан  РФ)
+          </details>
+          <details>
+            <summary>Сейчас тяжелая экономическая ситуация в мире.
+              Стоит ли сегодня заходить в крипту?</summary>
+            Сейчас с каждым днем все больше людей, компаний, экономических гигантов инвестируют в криптовалюту, а сам
+            рынок в
+            большой просадке,
+            и есть возможность закупить активы по максимально привлекательной цене
+          </details>
+          <details>
+            <summary>Во время прохождения обучения реально ли отбить
+              стоимость курса?</summary>
+            Реально не только отбить, но и заработать больше. На время обучения мы даем доступ в закрытый сигнальный
+            канал Fincrypto
+            Premium,
+            где вы сможете повторять сделки за нашими экспертами и зарабатывать,
+            как они
+          </details>
+          <details>
+            <summary>Как проходит обучение?</summary>
+            Курс проходит в формате видео-уроков на обучающей платформе
+            с домашним заданием, благодаря которым вы закрепите полученные знания, еженедельных групповых созвонов с
+            кураторами и
+            Zoom сессий
+            с приглашенными спикерами
+          </details>
+          <details>
+            <summary>Сколько длится обучение? На сколько предоставляется
+              доступ?</summary>
+            Курс длится 6 недель. Доступ остается на 3 месяца после окончания обучения. Все чаты с кураторами
+            сохраняются у вас
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="questionsForm">
+    <div class="container">
+      <div class="questionsForm__inner">
+        <h2 class="questionsForm__title">Остались вопросы?</h2>
+        <form class="questionsForm__form" action="#">
+          <input class="questionsForm__input" type="text" placeholder="Имя">
+          <input class="questionsForm__input" type="phone" placeholder="Телефон">
+          <input class="questionsForm__input" type="email" placeholder="Email">
+          <button class="questionsForm__btn" type="submit">Отправить</button>
+        </form>
+        <p class="questionsForm__descr">Оставляя заявку, вы соглашаетесь с политикой конфидециальности</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__box">
+          <div class="header__logo-box footer__logo-box">
+            <a class="header__logo-link" href="#">
+              <img class="header__logo" src="images/logo.svg" alt="лого">
+            </a>
+          </div>
+          <div class="footer__btns">
+            <button class="footer__btn">ОСТАВИТЬ ЗАЯВКУ</button>
+            <button class="footer__btn footer__btn-red">ПОСМОТРЕТЬ ТАРИФЫ</button>
+          </div>
+        </div>
+
+        <div class="footer__box">
+          <h6 class="footer__title">О НАС</h6>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="fotoer__list-item__link" href="#">
+                Видео-уроки
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="fotoer__list-item__link" href="#">
+                Программа
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="fotoer__list-item__link" href="#">
+                Результаты
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="fotoer__list-item__link" href="#">
+                Команда
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="fotoer__list-item__link" href="#">
+                Тарифы
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="fotoer__list-item__link" href="#">
+                FAQ
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__box">
+          <h6 class="footer__title">КОНТАКТЫ</h6>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="fotoer__list-item__link" href="tel:+79008397349">
+                +7 900 839 73 49
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="fotoer__list-item__link" href="tel:+79008397349">
+                +7 900 839 73 49
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="fotoer__list-item__link" href="tel:+79008397349">
+                +7 900 839 73 49
+              </a>
+            </li>
+          </ul>
+          <ul class="header__connect-links">
+            <li class="header__connect-links__item">
+              <a class="header__connect-links__item-link" href="#">
+                <img class="header__connect-links__item-img" src="images/inst.svg" alt="">
+              </a>
+            </li>
+            <li class="header__connect-links__item">
+              <a class="header__connect-links__item-link" href="#">
+                <img class="header__connect-links__item-img" src="images/youtube.svg" alt="">
+              </a>
+            </li>
+            <li class="header__connect-links__item">
+              <a class="header__connect-links__item-link" href="#">
+                <img class="header__connect-links__item-img" src="images/telega.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
 
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script type="text/javascript"

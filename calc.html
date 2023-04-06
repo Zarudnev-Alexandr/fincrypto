@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/calc.css">
+  <title>calc</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo-box">
+          <a class="header__logo-link" href="#">
+            <img class="header__logo" src="images/logo.svg" alt="лого">
+          </a>
+        </div>
+        <ul class="header__text-links">
+          <li class="header__text-links__item">
+            <a class="header__text-links__item-link" href="#">СТАТЬИ</a>
+          </li>
+          <li class="header__text-links__item">
+            <a class="header__text-links__item-link" href="#">ПРОГРАММА</a>
+          </li>
+        </ul>
+        <ul class="header__connect-links header__connect-links__header">
+          <li class="header__connect-links__item">
+            <a class="header__connect-links__item-link" href="#">
+              <img class="header__connect-links__item-img" src="images/inst.svg" alt="">
+            </a>
+          </li>
+          <li class="header__connect-links__item">
+            <a class="header__connect-links__item-link" href="#">
+              <img class="header__connect-links__item-img" src="images/youtube.svg" alt="">
+            </a>
+          </li>
+          <li class="header__connect-links__item">
+            <a class="header__connect-links__item-link" href="#">
+              <img class="header__connect-links__item-img" src="images/telega.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="calc">
+    <div class="container">
+      <div class="calc__inner">
+        <h2 class="calc__title">КАЛЬКУЛЯТОР FIN<span>C</span>RYPTO</h2>
+        <p class="calc__descr">Тут будет описание что это такое и зачем оно надо</p>
+        <div class="calc__items">
+          <div class="calc__item">
+            <div class="calc__item-inner">
+              <h5 class="calc__item-title">КАЛЬКУЛЯТОР ОБЪЕМА ВХОДА В СДЕЛКУ</h5>
+              <div class="calc__item-box">
+                <div class="calc__item-top__text">
+                  <label for="deposit">Размер депозита, $:</label>
+                  <input type="text" id="deposit-input" class="slider-input" value="0">
+                </div>
+                <div id="deposit" class="slider"></div>
+                <div class="calc__item-bottom__text">
+                  <p class="min__value">0</p>
+                  <p class="max__value">1000000</p>
+                </div>
+
+                <div class="calc__item-top__text">
+                  <label for="enterPrice">Цена входа, $:</label>
+                  <input type="text" id="enterPrice-input" class="slider-input" value="0">
+                </div>
+                <div id="enterPrice" class="slider"></div>
+                <div class="calc__item-bottom__text">
+                  <p class="min__value">0</p>
+                  <p class="max__value">1000000</p>
+                </div>
+
+                <div class="calc__item-top__text">
+                  <label for="stop">Стоп:</label>
+                  <input type="text" id="stop-input" class="slider-input" value="0">
+                </div>
+                <div id="stop" class="slider"></div>
+                <div class="calc__item-bottom__text">
+                  <p class="min__value">0</p>
+                  <p class="max__value">1000000</p>
+                </div>
+
+                <div class="calc__item-top__text">
+                  <label for="risk">Риск, %:</label>
+                  <input type="text" id="risk-input" class="slider-input-risk" value="0">
+                </div>
+                <div id="risk" class="slider-risk"></div>
+                <div class="calc__item-bottom__text">
+                  <p class="min__value">0</p>
+                  <p class="max__value">100</p>
+                </div>
+
+                <div class="calc__item-top__text">
+                  <label for="size">Размер плеча:</label>
+                  <input type="text" id="size-input" class="slider-input-size" value="0">
+                </div>
+                <div id="size" class="slider-size"></div>
+                <div class="calc__item-bottom__text">
+                  <p class="min__value">0</p>
+                  <p class="max__value">100</p>
+                </div>
+              </div>
+
+              <h5 class="calc__item-title">РЕЗУЛЬТАТ ВЫЧИСЛЕНИЙ</h5>
+              <div class="calc__item-result">
+                <label for="result">Процент лосса</label>
+                <input type="text" id="result-input-loss" class="slider-input" readonly>
+              </div>
+              <div class="calc__item-result">
+                <label for="result">Объем входа, $</label>
+                <input type="text" id="result-input-enter" class="slider-input" readonly>
+              </div>
+              <div class="calc__item-result">
+                <label for="result">Объем входа, валюта</label>
+                <input type="text" id="result-input-enterVal" class="slider-input" readonly>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="slider-container">
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="js/calc.js"></script>
+</body>
+
+</html>

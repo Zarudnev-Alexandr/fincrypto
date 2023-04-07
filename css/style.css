@@ -42,7 +42,7 @@
   margin-top: 80px;
 }
 
-.header__connect-links__header{
+.header__connect-links__header {
   margin-top: 0;
 }
 
@@ -52,6 +52,14 @@
 
 .header__connect-links__item+.header__connect-links__item {
   margin-left: 50px;
+}
+
+.header__connect-links__item-link {
+  background-size: 0% 0px;
+}
+
+.header__connect-links__item-link:hover {
+  background-size: 0% 0px;
 }
 
 .poster {
@@ -902,7 +910,231 @@ details[open]>summary:after {
   line-height: 39px;
 }
 
-.footer__list-item + .footer__list-item{
+.footer__list-item+.footer__list-item {
   margin-top: 6px;
 }
 
+
+
+
+
+/* media ----------------------------------------------*/
+
+
+
+
+@media (max-width: 1500px) {
+  .container {
+    max-width: 1450px;
+  }
+
+  /* header----------------------------------- */
+
+  .header {
+    padding: 30px 0;
+  }
+
+  .header__logo-box {
+    max-width: 270px;
+  }
+
+  .header__text-links__item-link {
+    font-size: 22px;
+  }
+
+  .header__connect-links__item-img {
+    max-width: 70%;
+  }
+
+  .header__text-links__item+.header__text-links__item {
+    margin-left: 50px;
+  }
+
+  .header__connect-links__item+.header__connect-links__item {
+    margin-left: 25px;
+  }
+
+  /* poster----------------------------------- */
+
+  .poster__inner {
+    padding-top: 70px;
+  }
+
+  .poster__title {
+    font-size: 45.8068px;
+    line-height: 55px;
+    margin-bottom: 30px;
+  }
+
+  .poster__descr {
+    font-size: 24.9034px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .poster__button {
+    font-size: 22.9034px;
+    line-height: 24px;
+    padding: 18px 33px 18px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 920px;
+  }
+
+  /* header----------------------------------- */
+
+  .header {
+    padding: 20px 0;
+  }
+
+  .header__logo-box {
+    max-width: 200px;
+  }
+
+  .header__text-links__item-link {
+    font-size: 18px;
+  }
+
+  .header__connect-links__item-img {
+    max-width: 50%;
+  }
+
+  .header__text-links__item+.header__text-links__item {
+    margin-left: 15px;
+  }
+
+  .header__connect-links__item+.header__connect-links__item {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-width: 680px;
+  }
+
+  a {
+    background-size: 0% 1px;
+  }
+
+  a:hover {
+    background-size: 100% 1px;
+  }
+
+  /* header----------------------------------- */
+
+  .header {
+    padding: 10px 0;
+  }
+
+  .header__logo-box {
+    max-width: 150px;
+  }
+
+  .header__text-links__item-link {
+    font-size: 14px;
+  }
+
+  .header__connect-links__item-img {
+    max-width: 30%;
+  }
+
+  .header__text-links__item+.header__text-links__item {
+    margin-left: 5px;
+  }
+
+  .header__connect-links__item+.header__connect-links__item {
+    margin-left: 0px;
+  }
+
+  .header__connect-links__item-link {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* poster----------------------------------- */
+
+  .poster__inner {
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+
+  .poster__title {
+    font-size: 32.8068px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .poster__descr {
+    font-size: 16.9034px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .poster__button {
+    font-size: 13.9034px;
+    line-height: 14px;
+    padding: 14px 17px 14px;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    max-width: 530px;
+  }
+
+  a {
+    background-size: 0% 1px;
+  }
+
+  a:hover {
+    background-size: 100% 1px;
+  }
+
+  /* header----------------------------------- */
+
+  .header {
+    padding: 10px 0;
+  }
+
+  .header__inner {
+    flex-direction: column;
+  }
+
+  .header__logo-box {
+    max-width: 150px;
+    margin-bottom: 7px;
+  }
+
+  .header__text-links {
+    margin-bottom: 7px;
+  }
+
+  /* poster----------------------------------- */
+
+  .poster__inner {
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+
+  .poster__title {
+    font-size: 24.8068px;
+    line-height: 29px;
+    margin-bottom: 5px;
+  }
+
+  .poster__descr {
+    font-size: 12.9034px;
+    line-height: 18px;
+    margin-bottom: 8px;
+  }
+
+  .poster__button {
+    font-size: 10.9034px;
+    line-height: 6px;
+    padding: 11px 13px 11px;
+  }
+}

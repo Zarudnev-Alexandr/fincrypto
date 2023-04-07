@@ -88,7 +88,7 @@
 
 .slider,
 .slider-risk,
-.slider-size {
+.slider-size, .slider2 {
   position: relative;
   /* width: 533px; */
   height: 12.7px;
@@ -101,7 +101,8 @@
 
 .slider .ui-slider-handle,
 .slider-risk .ui-slider-handle,
-.slider-size .ui-slider-handle {
+.slider-size .ui-slider-handle, 
+.slider2 .ui-slider-handle {
   position: absolute;
   right: 100%;
   top: -6px;
@@ -115,6 +116,10 @@
   outline: none;
 }
 
+.slider2 .ui-slider-handle{
+  background: #007787;
+}
+
 .ui-slider-range,
 .ui-widget-header,
 .ui-slider-range-min {
@@ -122,6 +127,17 @@
   background: #BB2649;
   border-top-left-radius: 6.34967px;
   border-bottom-left-radius: 6.34967px;
+}
+
+.slider2 .ui-slider-range,
+.slider2 .ui-widget-header,
+.slider2 .ui-slider-range-min{
+  background: #007787;
+}
+
+.calc__items{
+  display: flex;
+  justify-content: space-between;
 }
 
 .calc__item-result{

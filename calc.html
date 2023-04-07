@@ -131,6 +131,49 @@
               </div>
             </div>
           </div>
+
+          <div class="calc__item">
+            <div class="calc__item-inner">
+              <h5 class="calc__item-title">КАЛЬКУЛЯТОР ОБЪЕМА ФИКСАЦИИ</h5>
+              <div class="calc__item-box">
+                <div class="calc__item-top__text">
+                  <label for="volEnetrPrice">Объем входа в сделку, $</label>
+                  <input type="text" id="volEnetrPrice-input" class="slider-input2" value="0">
+                </div>
+                <div id="volEnetrPrice" class="slider2"></div>
+                <div class="calc__item-bottom__text">
+                  <p class="min__value">0</p>
+                  <p class="max__value">1000000</p>
+                </div>
+
+                <div class="calc__item-top__text">
+                  <label for="pointEnter">Точка входа, $</label>
+                  <input type="text" id="pointEnter-input" class="slider-input2" value="0">
+                </div>
+                <div id="pointEnter" class="slider2"></div>
+                <div class="calc__item-bottom__text">
+                  <p class="min__value">0</p>
+                  <p class="max__value">1000000</p>
+                </div>
+
+                <div class="calc__item-top__text">
+                  <label for="fixLevel">Уровень фиксации, $</label>
+                  <input type="text" id="fixLevel-input" class="slider-input2" value="0">
+                </div>
+                <div id="fixLevel" class="slider2"></div>
+                <div class="calc__item-bottom__text">
+                  <p class="min__value">0</p>
+                  <p class="max__value">1000000</p>
+                </div>
+              </div>
+
+              <h5 class="calc__item-title">РЕЗУЛЬТАТ ВЫЧИСЛЕНИЙ</h5>
+              <div class="calc__item-result">
+                <label for="result">Объем фиксации, $</label>
+                <input type="text" id="result-input-volFix" class="slider-input2" readonly>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

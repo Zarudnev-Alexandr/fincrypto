@@ -61,7 +61,7 @@
     </div>
   </header>
 
-   <section class="poster">
+  <section class="poster">
     <div class="container">
       <div class="poster__inner">
         <h1 class="poster__title">ОСВОЙТЕ МИР <br /> КРИПТОВАЛЮТ <br /> <span class="poster__title-span">С НУЛЯ</span>
@@ -82,30 +82,41 @@
         <div class="video__items">
           <div class="video__item">
             <h6 class="video__item-title">ЗАГОЛОВОК ЗАГОЛОВОК</h6>
-            <iframe class="video__item-box" width="550" height="314" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-            </iframe>
+            <div class="video__item-box__wrapper">
+              <iframe class="video__item-box" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+              </iframe>
+            </div>
           </div>
+
           <div class="video__item">
             <h6 class="video__item-title">ЗАГОЛОВОК ЗАГОЛОВОК</h6>
-            <iframe class="video__item-box" width="550" height="314" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-            </iframe>
+            <div class="video__item-box__wrapper">
+              <iframe class="video__item-box" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+              </iframe>
+            </div>
           </div>
+
           <div class="video__item">
             <h6 class="video__item-title">ЗАГОЛОВОК ЗАГОЛОВОК</h6>
-            <iframe class="video__item-box" width="550" height="314" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-            </iframe>
+            <div class="video__item-box__wrapper">
+              <iframe class="video__item-box" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+              </iframe>
+            </div>
           </div>
+
           <div class="video__item">
             <h6 class="video__item-title">ЗАГОЛОВОК ЗАГОЛОВОК</h6>
-            <iframe class="video__item-box" width="550" height="314" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-            </iframe>
+            <div class="video__item-box__wrapper">
+              <iframe class="video__item-box" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+              </iframe>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!--<section class="results">
+  <section class="results">
     <div class="container">
       <div class="results__inner">
         <h2 class="results__title">РЕЗУЛЬТАТЫ НАШИХ УЧЕНИКОВ</h2>
@@ -164,7 +175,9 @@
         </div>
 
         <div class="firstSlider__content">
-          <img class="firstSlider__content-img" src="images/firstSliderImg.jpg" alt="">
+          <div class="firstSlider__content-img__box">
+            <img class="firstSlider__content-img" src="images/firstSliderImg.jpg" alt="">
+          </div>
           <div class="firstSlider__content-items">
             <div class="firstSlider__content-items__item">
               <div class="firstSlider__content-items__item-inner">
@@ -244,8 +257,11 @@
             <div class="team__item-inner">
               <img class="team__item-img" src="images/speaker1.jpg" alt="">
               <div class="team__item-content">
-                <p class="team__item-content__job">Главный спикер</p>
-                <h4 class="team__item-content__name">АЛЕКСАНДР ПЕРЕЛЫГИН</h4>
+                <h4 class="team__item-content__name">
+                  <p class="team__item-content__job">Главный спикер</p>
+
+                  АЛЕКСАНДР ПЕРЕЛЫГИН
+                </h4>
                 <p class="team__item-content__descr">
                   Со-основатель Fincrypto и ведущий эксперт обучающего курса Trade Makers, профессиональный трейдер
                   с многолетним опытом, поделится с участниками курса знаниями
@@ -482,11 +498,13 @@
 
     <div class="container">
       <div class="program__inner2">
-        <details>
-          <summary>Эксклюзивная информация от Fincrypto, разработка стратегии, формирование инвестиционного портфеля.
-          </summary>
-          <i>Д/З - оставить отзыв об обучении</i>
-        </details>
+        <div class="program__content">
+          <details>
+            <summary>Эксклюзивная информация от Fincrypto, разработка стратегии, формирование инвестиционного портфеля.
+            </summary>
+            <i>Д/З - оставить отзыв об обучении</i>
+          </details>
+        </div>
       </div>
     </div>
   </section>
@@ -603,8 +621,8 @@
 
   <section class="questions">
     <div class="container">
-      <div class="questions__inner">
-        <h2 class="questions__title">Остались вопросы?</h2>
+      <div class="questions__inner calcPresent__inner">
+        <h2 class="questions__title program__title">Остались вопросы?</h2>
         <div class="questions__content">
           <details>
             <summary>Я совсем новичок в этом, подойдет ли курс мне?</summary>
@@ -764,7 +782,7 @@
         </div>
       </div>
     </div>
-  </footer> -->
+  </footer> 
 
 
 

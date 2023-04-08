@@ -14,7 +14,8 @@ $(document).ready(function () {
   });
 
   // Установите дату, до которой нужен таймер обратного отсчета
-  var countDownDate = new Date().getTime() + 2.5*60*60*1000;
+  var countDownDate = new Date(2023, 3, 30, 00, 0, 0, 0)
+  // console.log(new Date(new Date().getTime() + 507 * 60 * 60 * 1000));
 
   // Обновляйте таймер каждую секунду
   var x = setInterval(function () {

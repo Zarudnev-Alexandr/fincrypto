@@ -453,8 +453,6 @@
   font-style: normal;
 }
 
-.team__item-img__box {}
-
 .team__item-img {
   margin-right: 90px;
   max-width: 477px;
@@ -731,7 +729,7 @@ details[open]>summary:after {
   text-transform: uppercase;
   display: inline-block;
   margin: 0 auto;
-  width: 450px;
+  width: 470px;
 }
 
 #timer div {
@@ -747,7 +745,7 @@ details[open]>summary:after {
   line-height: 35px;
   display: flex;
   justify-content: space-between;
-  max-width: 450px;
+  max-width: 470px;
   margin: 0 auto;
   transform: translateX(-20px);
 }
@@ -1243,7 +1241,7 @@ details[open]>summary:after {
   }
 
   .timer__descr {
-    max-width: 42 0px;
+    max-width: 420px;
     font-size: 24px;
     transform: translateX(-3px);
   }
@@ -1269,6 +1267,41 @@ details[open]>summary:after {
   .calcPresent__btn {
     padding: 32px 57px 32px 55px;
     max-width: 432px;
+  }
+
+  /* footer----------------------------------------- */
+
+  .footer__inner {
+    padding: 80px 0 100px;
+  }
+
+  .footer__title {
+    font-size: 27.9034px;
+    margin-bottom: 25px;
+  }
+
+  .footer__list {
+    font-size: 14.811px;
+  }
+
+  .footer__list-item+.footer__list-item {
+    margin-top: 2px;
+  }
+
+  .fotoer__list-item__link {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+
+  .footer__logo {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer__btn {
+    font-size: 18px;
+    padding: 20px 0 20px;
   }
 }
 
@@ -1763,6 +1796,55 @@ details[open]>summary:after {
     margin-top: 15px;
   }
 
+  /* footer----------------------------------------- */
+
+  .footer__inner {
+    padding: 30px 0 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__box+.footer__box {
+    margin-top: 20px;
+  }
+
+  .footer__title {
+    font-size: 23.8068px;
+    line-height: 40px;
+    margin-bottom: 5px;
+  }
+
+  .header__connect-links {
+    margin-top: 20px;
+  }
+
+  .footer__logo-box {
+    max-width: 250px;
+  }
+
+  .footer__list {
+    font-size: 14.811px;
+  }
+
+  .footer__list-item+.footer__list-item {
+    margin-top: 2px;
+  }
+
+  .fotoer__list-item__link {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+
+  .footer__logo {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer__btn {
+    font-size: 18px;
+    padding: 20px 0 20px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -1894,5 +1976,16 @@ details[open]>summary:after {
     font-size: 22px;
     padding: 18px 34px 18px 26px;
     max-width: 280px;
+  }
+
+  .footer__logo-box {
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .footer__btn {
+    font-size: 16px;
+    padding: 15px 20px 15px;
   }
 }

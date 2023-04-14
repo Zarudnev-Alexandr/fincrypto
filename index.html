@@ -24,42 +24,85 @@
 
 <body>
 
-  <header class="header">
-    <div class="container">
+  <section class="top-nav">
+    <div class="header__logo-box">
+      <a class="header__logo-link" href="#">
+        <img class="header__logo" src="images/logo.svg" alt="лого">
+      </a>
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
+    <div class="menu">
+      <ul class="header__text-links">
+        <li class="header__text-links__item">
+          <a class="header__text-links__item-link" href="#">СТАТЬИ</a>
+        </li>
+        <li class="header__text-links__item">
+          <a class="header__text-links__item-link" href="#">ПРОГРАММА</a>
+        </li>
+      </ul>
+      <ul class="header__connect-links header__connect-links__header">
+        <li class="header__connect-links__item">
+          <a class="header__connect-links__item-link" href="#">
+            <img class="header__connect-links__item-img" src="images/inst.svg" alt="">
+          </a>
+        </li>
+        <li class="header__connect-links__item">
+          <a class="header__connect-links__item-link" href="#">
+            <img class="header__connect-links__item-img" src="images/youtube.svg" alt="">
+          </a>
+        </li>
+        <li class="header__connect-links__item">
+          <a class="header__connect-links__item-link" href="#">
+            <img class="header__connect-links__item-img" src="images/telega.svg" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- <header class="header">
+    <div class="container header__container">
       <div class="header__inner">
         <div class="header__logo-box">
           <a class="header__logo-link" href="#">
             <img class="header__logo" src="images/logo.svg" alt="лого">
           </a>
         </div>
-        <ul class="header__text-links">
-          <li class="header__text-links__item">
-            <a class="header__text-links__item-link" href="#">СТАТЬИ</a>
-          </li>
-          <li class="header__text-links__item">
-            <a class="header__text-links__item-link" href="#">ПРОГРАММА</a>
-          </li>
-        </ul>
-        <ul class="header__connect-links header__connect-links__header">
-          <li class="header__connect-links__item">
-            <a class="header__connect-links__item-link" href="#">
-              <img class="header__connect-links__item-img" src="images/inst.svg" alt="">
-            </a>
-          </li>
-          <li class="header__connect-links__item">
-            <a class="header__connect-links__item-link" href="#">
-              <img class="header__connect-links__item-img" src="images/youtube.svg" alt="">
-            </a>
-          </li>
-          <li class="header__connect-links__item">
-            <a class="header__connect-links__item-link" href="#">
-              <img class="header__connect-links__item-img" src="images/telega.svg" alt="">
-            </a>
-          </li>
-        </ul>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+          <div class='menu-button'></div>
+          <ul class="header__text-links">
+            <li class="header__text-links__item">
+              <a class="header__text-links__item-link" href="#">СТАТЬИ</a>
+            </li>
+            <li class="header__text-links__item">
+              <a class="header__text-links__item-link" href="#">ПРОГРАММА</a>
+            </li>
+          </ul>
+          <ul class="header__connect-links header__connect-links__header">
+            <li class="header__connect-links__item">
+              <a class="header__connect-links__item-link" href="#">
+                <img class="header__connect-links__item-img" src="images/inst.svg" alt="">
+              </a>
+            </li>
+            <li class="header__connect-links__item">
+              <a class="header__connect-links__item-link" href="#">
+                <img class="header__connect-links__item-img" src="images/youtube.svg" alt="">
+              </a>
+            </li>
+            <li class="header__connect-links__item">
+              <a class="header__connect-links__item-link" href="#">
+                <img class="header__connect-links__item-img" src="images/telega.svg" alt="">
+              </a>
+            </li>
+          </ul>
       </div>
     </div>
-  </header>
+  </header> -->
 
   <section class="poster">
     <div class="container">
@@ -75,7 +118,7 @@
     </div>
   </section>
 
-  <section class="video">
+  <section class="video" id="video__section">
     <div class="container">
       <div class="video__inner">
         <h3 class="video__title">НАЧНИ ОБУЧЕНИЕ УЖЕ СЕЙЧАС</h3>
@@ -116,7 +159,7 @@
     </div>
   </section>
 
-  <section class="results">
+  <section class="results" id="results__section">
     <div class="container">
       <div class="results__inner">
         <h2 class="results__title">РЕЗУЛЬТАТЫ НАШИХ УЧЕНИКОВ</h2>
@@ -248,7 +291,7 @@
     </div>
   </section>
 
-  <section class="team">
+  <section class="team" id="team__section">
     <div class="container">
       <div class="team__inner">
         <h1 class="team__title">НАША КОМАНДА</h1>
@@ -410,7 +453,7 @@
     </div>
   </section>
 
-  <section class="program">
+  <section class="program" id="program__section">
     <div class="program__inner-main">
       <div class="container">
         <div class="program__inner">
@@ -509,7 +552,199 @@
     </div>
   </section>
 
-  <section class="tariff">
+  <section class="tariff" id="tariff__section">
+    <div class="container">
+      <div class="tariff__inner">
+        <h2 class="tariff__title">ТАРИФЫ</h2>
+        <div class="tariff__items">
+
+          <div class="tariff__item tariff__item-1">
+            <div class="tariff__item-wrapper tariff__item-wrapper__1">
+              <h4 class="tariff__item-wrapper__title">ТРЕЙДЕР</h4>
+              <p class="tariff__item-wrapper__descr">
+                Приобретая этот пакет, вы получите уникальную возможность узнать, как функционирует крипто-рынок
+                изнутри, усвоить
+                нюансы, которые помогут вам заработать в этой области.
+                <br><br>
+                Вы также научитесь грамотно распределять риски, понимать, как работать с эмоциями, чтобы избежать потери
+                денег.
+              </p>
+              <ul class="tariff__item-wrapper__list">
+                <li class="tariff__item-wrapper__list-item">
+                  Доступ к обучающим материалам
+                </li>
+                <li class="tariff__item-wrapper__list-item">
+                  Практическая часть: домашние задания и тесты
+                </li>
+                <li class="tariff__item-wrapper__list-item">
+                  Сопровождение кураторами
+                </li>
+                <li class="tariff__item-wrapper__list-item">
+                  Торговые стримы от Александра и его команды
+                </li>
+                <li class="tariff__item-wrapper__list-item">
+                  Еженедельные групповые созвоны
+                </li>
+                <li class="tariff__item-wrapper__list-item">
+                  Два групповых созвона с Психологом
+                </li>
+                <li class="tariff__item-wrapper__list-item">
+                  Zoom-сессия с криптоюристом
+                </li>
+                <li class="tariff__item-wrapper__list-item">
+                  Zoom-сессия с экспертом по майнингу;
+                </li>
+                <li class="tariff__item-wrapper__list-item">
+                  Доступ к закрытому сигнальному каналу Fincrypto Premium (Telegram) на время обучения
+                </li>
+                <li class="tariff__item-wrapper__list-item">
+                  Доступ к закрытому каналу Community Fincrypto (Telegram) на время обучения
+                </li>
+              </ul>
+              <p class="tariff__item-wrapper__descr">
+                Идеально подойдет для вас, если вы хотите научиться зарабатывать в области криптовалюты и поднять свои
+                знания на новый
+                уровень. <br><br>
+                Этот тариф позволит вам начать торговлю даже если вы новичок с небольшим депозитом.
+              </p>
+            </div>
+            <div class="tariff__item-price__box">
+              <h2 class="tariff__item-price__box-title">400$</h2>
+              <p class="tariff__item-price__box-descr">32.000 ₽ <br>
+                Рассрочка для граждан РФ</p>
+              <button class="tariff__item-price__box-btn">
+                Купить курс
+              </button>
+            </div>
+          </div>
+          <div class="tariff__item tariff__item-2">
+            <div class="tariff__item-wrapper">
+              <h4 class="tariff__item-wrapper__title">МАРКЕТМЕЙКЕР</h4>
+              <p class="tariff__item-wrapper__descr">
+                С помощью этого пакета вы получите все базовые знания с персональным разбором всех ошибок, а также
+                изучите основные
+                сетапы, которые помогут получать прибыль в крипте, поймете, как хеджировать (страховать) свои риски в
+                инвестициях,
+                сформируете долгосрочный инвестиционный портфель и еще многое другое.
+              </p>
+              <ul class="tariff__item-wrapper__list">
+                <li class="tariff__item-wrapper__list-item">
+                  Все, что и в тарифе «Трейдер»
+                </li>
+                <li class="span-title">
+                  Плюс:
+                </li>
+                <li class="tariff__item-wrapper__list-item">
+                  Углубленное изучение каждой темы, с персональным практическим домашним заданием и разбором ошибок
+                </li>
+                <li class="tariff__item-wrapper__list-item">
+                  Индивидуальные занятия в Zoom с доскональным разбором всех вопросов
+                </li>
+                <li class="tariff__item-wrapper__list-item">
+                  Личный чат с нашей командой – где будете только вы и наши эксперты. Вы сможете в любое время задать
+                  интересующий вас
+                  вопрос и получите на него ответ
+                </li>
+                <li class="tariff__item-wrapper__list-item">
+                  Мы индивидуально подберем домашние задание, исходя из вашего опыта в торговле
+                </li>
+                <li class="tariff__item-wrapper__list-item">
+                  Доступ к закрытому каналу Community Fincrypto (Telegram) еще на 1 месяц после обучения 
+                </li>
+              </ul>
+              <p class="tariff__item-wrapper__descr">
+                Предназначен как для новичков, так и для продвинутых трейдеров. <br><br>
+                Получение личной поддержки от команды экспертов может значительно повысить ваши шансы на успех в мире
+                криптовалюты, и
+                снизить риски потери денег. Мы всегда готовы помочь вам достичь ваших инвестиционных целей!
+              </p>
+            </div>
+            <div class="tariff__item-price__box">
+              <h2 class="tariff__item-price__box-title">1500$</h2>
+              <p class="tariff__item-price__box-descr">120.000 ₽ <br>
+                Рассрочка для граждан РФ</p>
+              <button class="tariff__item-price__box-btn">
+                Купить курс
+              </button>
+            </div>
+          </div>
+          <div class="tariff__item tariff__item-3">
+            <div class="tariff__item-wrapper">
+              <h4 class="tariff__item-wrapper__title">Личное обучение от CEO Fincrypto Александра Перелыгина</h4>
+              <div class="tariff__item-wrapper__content">
+                <p class="tariff__item-wrapper__descr">
+                  <b>Личное обучение</b> в криптовалюте может быть ключевым фактором успеха для тех, кто стремится стать
+                  профессионалом в этой области. <br><br>
+                  Чтобы достичь успеха быстрее, следует использовать минимальные временные и моральные ресурсы, чтобы
+                  сосредоточиться на
+                  своих целях и избежать ненужных препятствий. <br><br>
+                  Кроме того, максимальная <b>поддержка</b> со стороны окружения и нетворкинг Александра могут быть
+                  очень полезными, особенно
+                  при обучении в криптовалюте. <br><br>
+                  <b>Нетворкинг</b> поможет вам узнать о новых тенденциях в отрасли, получить информацию о новых
+                  возможностях и связаться с людьми, которые могут стать вашими партнерами или наставниками. <br><br>
+                  В целом, личное обучение в криптовалюте может быть сложным процессом, но с правильным подходом и
+                  поддержкой окружения,
+                  вы можете достичь своих целей быстрее и эффективнее.
+                  <b>Не забывайте,</b> что постоянное обучение и совершенствование своих навыков – это ключевой фактор
+                  успеха в этой быстро
+                  меняющейся отрасли.
+                </p>
+                <ul class="tariff__item-wrapper__list">
+                  <li class="tariff__item-wrapper__list-item">
+                    Конкретный пул задач и треккинг с контролем исполнения
+                  </li>
+                  <li class="tariff__item-wrapper__list-item">
+                    Персональные занятия в Zoom с доскональным разбором всех вопросов 2 раза в неделю. Регламент от 40
+                    до 80 минут 
+                  </li>
+                  <li class="tariff__item-wrapper__list-item">
+                    Доступ к закрытому каналу Fincrypto Premium (Telegram)
+                  </li>
+                  <li class="tariff__item-wrapper__list-item">
+                    Личный чат с нашей командой – где будете только вы и наши эксперты. Вы сможете в любое время задать
+                    интересующий вас
+                    вопрос и получите на него ответ
+                  </li>
+                  <li class="tariff__item-wrapper__list-item">
+                    Доступ к закрытому каналу Community Fincrypto (Telegram) там вы сможете задать интересующие вас
+                    вопросы,
+                    пообщаться с
+                    другими участниками, получить от нас аналитику рынка, одни из первых получать информацию 
+                  </li>
+                  <li class="tariff__item-wrapper__list-item">
+                    Личный чат с Александром и его командой, для постоянного взаимодействия. 
+                  </li>
+                  <li class="tariff__item-wrapper__list-item">
+                    Доступ к обучающей платформе Fincrypto «Trade Makers» 
+                  </li>
+                  <li class="tariff__item-wrapper__list-item">
+                    Персональные домашние задания и разбор их 
+                  </li>
+                  <li class="tariff__item-wrapper__list-item">
+                    Анализ ваших сделок (разбор ошибок, рекомендации) 
+                  </li>
+                  <li class="tariff__item-wrapper__list-item">
+                    Сессии с психологом
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tariff__item-price__box">
+              <h2 class="tariff__item-price__box-title">10000$</h2>
+              <p class="tariff__item-price__box-descr">800.000 ₽</p>
+              <button class="tariff__item-price__box-btn">
+                Купить курс
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="tariff" id="tariff__section">
     <div class="container">
       <div class="tariff__inner">
         <h2 class="tariff__title">ТАРИФЫ</h2>
@@ -585,7 +820,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section class="timer">
     <div class="container">
@@ -593,18 +828,41 @@
         <h2 class="timer__title">до НАЧАЛА следующего потока:</h2>
         <div class="timer__wrapper">
           <div id="timer">
-            <div class="days">00</div> :
-            <div class="hours">00</div> :
-            <div class="minutes">00</div> :
-            <div class="seconds">00</div>
+            <div class="timer__container">
+              <div class="timer__container-time">
+                <div class="days">00</div>
+                <span>:</span>
+              </div>
+              <span>дней</span>
+            </div>
+            <div class="timer__container">
+              <div class="timer__container-time">
+                <div class="hours">00</div>
+                <span>:</span>
+              </div>
+              <span>часов</span>
+            </div>
+            <div class="timer__container">
+              <div class="timer__container-time">
+                <div class="minutes">00</div>
+                <span>:</span>
+              </div>
+              <span>минут</span>
+            </div>
+            <div class="timer__container">
+              <div class="timer__container-time">
+                <div class="seconds">00</div>
+              </div>
+              <span>секунд</span>
+            </div>
           </div>
         </div>
-        <div class="timer__descr">
+        <!-- <div class="timer__descr">
           <p>дней</p>
           <p>часов</p>
           <p>минут</p>
           <p>секунд</p>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -619,10 +877,10 @@
     </div>
   </section>
 
-  <section class="questions">
+  <section class="questions" id="faq__section">
     <div class="container">
       <div class="questions__inner calcPresent__inner">
-        <h2 class="questions__title program__title">Остались вопросы?</h2>
+        <h2 class="questions__title program__title">FAQ</h2>
         <div class="questions__content">
           <details>
             <summary>Я совсем новичок в этом, подойдет ли курс мне?</summary>
@@ -711,32 +969,32 @@
           <h6 class="footer__title">О НАС</h6>
           <ul class="footer__list">
             <li class="footer__list-item">
-              <a class="fotoer__list-item__link" href="#">
+              <a class="fotoer__list-item__link" href="#video__section">
                 Видео-уроки
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="fotoer__list-item__link" href="#">
+              <a class="fotoer__list-item__link" href="#program__section">
                 Программа
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="fotoer__list-item__link" href="#">
+              <a class="fotoer__list-item__link" href="#results__section">
                 Результаты
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="fotoer__list-item__link" href="#">
+              <a class="fotoer__list-item__link" href="#team__section">
                 Команда
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="fotoer__list-item__link" href="#">
+              <a class="fotoer__list-item__link" href="#tariff__section">
                 Тарифы
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="fotoer__list-item__link" href="#">
+              <a class="fotoer__list-item__link" href="#faq__section">
                 FAQ
               </a>
             </li>
@@ -782,7 +1040,7 @@
         </div>
       </div>
     </div>
-  </footer> 
+  </footer>
 
 
 
